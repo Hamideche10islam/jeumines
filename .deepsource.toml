@@ -5,11 +5,19 @@ name = "java"
 enabled = true
 
 [[analyzers]]
-name = "coverage"
+name = "security"
 enabled = true
 
+# Remove the coverage analyzer - it doesn't exist
+# [[analyzers]]
+# name = "coverage"
+# enabled = true
+
 [[transformers]]
-name = "jacoco"
+name = "gitlab-ci"
 enabled = true
-[transformers.jacoco]
-coverage_file = "target/jacoco.exec"
+
+# Remove the jacoco transformer - not supported
+# [[transformers]]
+# name = "jacoco"
+# enabled = true
