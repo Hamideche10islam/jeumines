@@ -3,21 +3,3 @@ version = 1
 [[analyzers]]
 name = "java"
 enabled = true
-
-[[analyzers]]
-name = "security"
-enabled = true
-
-# Remove the coverage analyzer - it doesn't exist
-# [[analyzers]]
-# name = "coverage"
-# enabled = true
-
-[[transformers]]
-name = "gitlab-ci"
-enabled = true
-
-# Remove the jacoco transformer - not supported
-# [[transformers]]
-# name = "jacoco"
-# enabled = true
