@@ -8,18 +8,10 @@ enabled = true
 # Set your Java runtime version
 runtime_version = "17"
 
-# Optional: Enable code formatting
-[[transformers]]
-name = "java/format"
-enabled = true
-
-# Optional: Report test coverage (for metrics)
+# Enable test coverage metrics (optional)
 # 👉 For Maven projects
 [[test_reports]]
 path = "target/site/jacoco/jacoco.xml"
 format = "jacoco"
 
-# 👉 For Gradle projects (comment out the Maven one above)
-# [[test_reports]]
-# path = "build/reports/jacoco/test/jacocoTestReport.xml"
-# format = "jacoco"
+
