@@ -2,6 +2,13 @@ version = 1
 
 [[analyzers]]
 name = "java"
+enabled = true
 
-  [analyzers.meta]
-  runtime_version = "17"
+[analyzers.meta]
+# Set your Java version here (e.g., 8, 11, 17, or 21)
+runtime_version = "17"
+
+# (Optional) You can enable the Test Coverage Analyzer too:
+[[transformers]]
+name = "java/format"
+enabled = true
