@@ -4,6 +4,5 @@ version = 1
 name = "java"
 enabled = true
 
-[[analyzers]]
-name = "migration"
-enabled = true
+[analyzers.meta]
+runtime_version = "17"
