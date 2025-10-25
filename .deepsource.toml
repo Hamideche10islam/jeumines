@@ -5,10 +5,21 @@ name = "java"
 enabled = true
 
 [analyzers.meta]
-# Set your Java version here (e.g., 8, 11, 17, or 21)
+# Set your Java runtime version
 runtime_version = "17"
 
-# (Optional) You can enable the Test Coverage Analyzer too:
+# Optional: Enable code formatting
 [[transformers]]
 name = "java/format"
 enabled = true
+
+# Optional: Report test coverage (for metrics)
+# 👉 For Maven projects
+[[test_reports]]
+path = "target/site/jacoco/jacoco.xml"
+format = "jacoco"
+
+# 👉 For Gradle projects (comment out the Maven one above)
+# [[test_reports]]
+# path = "build/reports/jacoco/test/jacocoTestReport.xml"
+# format = "jacoco"
