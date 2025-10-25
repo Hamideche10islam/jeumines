@@ -4,14 +4,9 @@ version = 1
 name = "java"
 enabled = true
 
+[[analyzers]]
+name = "test-coverage"
+enabled = true
+
 [analyzers.meta]
-# Set your Java runtime version
-runtime_version = "17"
-
-# Enable test coverage metrics (optional)
-# 👉 For Maven projects
-[[test_reports]]
-path = "target/site/jacoco/jacoco.xml"
-format = "jacoco"
-
-
+coverage_report_path = "target/site/jacoco/jacoco.xml"
