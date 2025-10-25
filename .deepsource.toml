@@ -4,9 +4,10 @@ version = 1
 name = "java"
 enabled = true
 
-[[analyzers]]
+[[transformers]]
 name = "test-coverage"
 enabled = true
 
-[analyzers.meta]
+[transformers.config]
 coverage_report_path = "target/site/jacoco/jacoco.xml"
+coverage_tool = "jacoco"
