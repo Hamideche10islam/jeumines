@@ -3,3 +3,7 @@ version = 1
 [[analyzers]]
 name = "java"
 enabled = true
+
+[[analyzers]]
+name = "migration"
+enabled = true
