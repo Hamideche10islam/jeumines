@@ -3,3 +3,13 @@ version = 1
 [[analyzers]]
 name = "java"
 enabled = true
+
+[[analyzers]]
+name = "coverage"
+enabled = true
+
+[[transformers]]
+name = "jacoco"
+enabled = true
+[transformers.jacoco]
+coverage_file = "target/jacoco.exec"
